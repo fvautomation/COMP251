@@ -3,6 +3,6 @@ public class Task2{
         String s1 = "135";
         String s2 = "215";
 
-        System.out.println("Sum of " + s1 + " and " + s2 + "is: " + (Integer.valueOf(s1) + Integer.valueOf(s2)));
+        System.out.println("Sum of " + s1 + " and " + s2 + "is: " + (Integer.parseInt(s1) + Integer.parseInt(s2)));
     }
 }
