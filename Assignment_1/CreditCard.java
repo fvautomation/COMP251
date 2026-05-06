@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dsaj.primer;
+
 
 /**
  * A simple model for a consumer credit card.
@@ -81,6 +81,16 @@ public class CreditCard {
   /** Return the current balance. */
   public double getBalance() { return balance; }
 
+/** Return the string representation of the Credit Card */
+  public String toString() {
+    String result = "Customer = " + customer;
+    result += "\nBank = " + bank;
+    result += "\nAccount = " + account;
+    result += "\nBalance = " + balance;
+    result += "\nLimit = " + limit;
+    return result;
+  };
+
   // Update methods:
   /**
    * Charges the given price to the card, assuming sufficient credit limit.
@@ -111,6 +121,8 @@ public class CreditCard {
     System.out.println("Balance = " + card.balance);  // implicit cast
     System.out.println("Limit = " + card.limit);      // implicit cast
   }
+
+
   public static void main(String[] args) {
     CreditCard[] wallet = new CreditCard[3];
     wallet[0] = new CreditCard("John Bowman", "California Savings",
@@ -127,7 +139,7 @@ public class CreditCard {
     }
 
     for (CreditCard card : wallet) {
-      CreditCard.printSummary(card);        // calling static method
+      System.out.println(card);
       while (card.getBalance() > 200.0) {
         card.makePayment(200);
         System.out.println("New balance = " + card.getBalance());
