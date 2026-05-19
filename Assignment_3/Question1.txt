@@ -3,8 +3,8 @@ for (int j=0; j < n; j += 2)
 
 This loop increases by 2 each time, so it runs about n/2 times.
 
-And because each iteration does constant-time operation which is (total += arr[j]), the running time is represented
-O(n).
+And because each iteration does constant-time operation which is (total += arr[j]), 
+the running time is represented O(n).
 
 In example 3
 for (int j=0; j < n; j++)
@@ -26,4 +26,4 @@ This can be looked at in the expression:
 If we use the arithmetic formula:
 n(n+1)/2
 
-This simplifies to O(n)^2 
+This simplifies to O(n^2) 
