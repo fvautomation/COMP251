@@ -118,6 +118,19 @@ public class ArrayList<E> implements List<E> {
     data = temp;                               // start using the new array
   }
 
+  /**
+   * Checks to see if the array contains the given element.
+   * @param  e   the element to be checking
+   */
+  public boolean contains(E e){
+    for (int k=0; k < size; k++){
+      if (data[k].equals(e)){
+        return true;
+      }
+    }
+    return false;
+  }
+
   //---------------- nested ArrayIterator class ----------------
   /**
    * A (nonstatic) inner class. Note well that each instance contains an implicit
