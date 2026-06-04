@@ -17,24 +17,13 @@ class task1{
         Position<Integer> p3 = binaryTree.addLeft(p2, 6);
         Position<Integer> p4 = binaryTree.addRight(p2, 7);
 
-        System.out.println("Binary Tree Structure");
-
-        Iterable<Position<Integer>> array = binaryTree.breadthfirst();
-
-        System.out.println("Root: " + binaryTree.root.getElement());
-        System.out.println("Left Child of Root: " + binaryTree.root.getLeft().getElement());
-        System.out.println("Right Child of Root: " + binaryTree.root.getRight().getElement());
-        
-
-        getNext(binaryTree, root);
-
-        for (Position a: array){
-            System.out.println(a.getElement());
-        }
-
-    }
-
-    static void getNext(LinkedBinaryTree<Integer> tree, Position<Integer> parent){
-        System.out.println(parent.getElement());
+        System.out.println("Binary Tree Structure:");
+        System.out.println("Root: " + root.getElement());
+        System.out.println("Left Child of Root: " + leftChild.getElement());
+        System.out.println("Right Child of Root: " + rightChild.getElement());
+        System.out.println("Left Child of 2: " + p1.getElement());
+        System.out.println("Right Child of 2: " + p2.getElement());
+        System.out.println("Left Child of 5: " + p3.getElement());
+        System.out.println("Right Child of 5: " + p4.getElement());
     }
 }
