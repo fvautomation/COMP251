@@ -21,6 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
  
+package Assignment_7;
 
 /**
  * An interface for a position which is an abstraction for the
