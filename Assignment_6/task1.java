@@ -13,7 +13,7 @@ class task1{
 
         //your code should come here
         Position<Integer> p1 = binaryTree.addLeft(leftChild, 4);
-        Position<Integer> p2 = binaryTree.addRight(rightChild, 5);
+        Position<Integer> p2 = binaryTree.addRight(leftChild, 5);
         Position<Integer> p3 = binaryTree.addLeft(p2, 6);
         Position<Integer> p4 = binaryTree.addRight(p2, 7);
 
