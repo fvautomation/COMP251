@@ -2,26 +2,26 @@ package Assignment_8;
 
 class task2{
     public static void main(String[] args) {
-        Map<String, Integer> map = new UnsortedTableMap<>();
+        ChainHashMap<String, Integer> table = new ChainHashMap<>();
 
-        map.put("Alice", 25);
-        map.put("Bob", 30);
+        table.put("Alice", 25);
+        table.put("Bob", 30);
         
-        map.put("Eva", 40);
-        map.put("Charlie", 35);
+        table.put("Eva", 40);
+        table.put("Charlie", 35);
 
-        System.out.println("Age of Alice: " + map.get("Alice"));
-        System.out.println("Age of Bob: " + map.get("Bob"));
-        System.out.println("Age of Charlie: " + map.get("Charlie"));
-        System.out.println("Removed Bob's age: " + map.remove("Bob"));
-        System.out.println("Is the map empty? " + map.isEmpty());
-        System.out.println("Entires in the map: ");
+        System.out.println("Age of Alice: " + table.get("Alice"));
+        System.out.println("Age of Bob: " + table.get("Bob"));
+        System.out.println("Age of Charlie: " + table.get("Charlie"));
+        System.out.println("Removed Bob's age: " + table.remove("Bob"));
+        System.out.println("Is the table empty? " + table.isEmpty());
+        System.out.println("Entires in the table: ");
 
-        Iterable<Entry<String, Integer>> array = map.entrySet();
+        Iterable<Entry<String, Integer>> array = table.entrySet();
         for(Entry e: array){
             System.out.println("Key: " + e.getKey() + ", Value: " + e.getValue());
         }
 
-        System.out.println("Size of the map: " + map.size());
+        System.out.println("Size of the table: " + table.size());
     }
 }
